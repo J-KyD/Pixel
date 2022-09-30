@@ -6,6 +6,7 @@ import { useState } from "react";
 function Eyes(){
 const [eyes, setEyes] = useState(0);
 var eyeNames = [
+  'eyes-0',
   'eyes-1',
   'eyes-2',
   'eyes-3'
@@ -13,10 +14,10 @@ var eyeNames = [
   
 ]; 
 var eyeCollection = [
-
-  { url: "http://localhost:3000/eyes.png", title: "beach" },
-  { url: "http://localhost:3000/eyes2.png", title: "boat" },
-  { url: "http://localhost:3000/eyes3.png", title: "forest" },
+  {url: "http://localhost:3000/none.png"},
+  { url: "http://localhost:3000/eyes.png" },
+  { url: "http://localhost:3000/eyes2.png" },
+  { url: "http://localhost:3000/eyes3.png" },
  
   
 ]; 
@@ -29,7 +30,7 @@ function Prev(){
     //else{
       //  Current--;}
       if(eyes === 0){
-        setEyes(eyes + 2)
+        setEyes(eyes + 3)
       }
         else{
           setEyes(eyes -1)
@@ -43,8 +44,8 @@ function Prev(){
 
 
 function Next(){
-  if(eyes > 1 ){
-    setEyes(eyes - 2)
+  if(eyes > 2 ){
+    setEyes(eyes - 3)
   }
     else{
       setEyes(eyes + 1)

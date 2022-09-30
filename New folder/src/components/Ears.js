@@ -6,6 +6,7 @@ import { useState } from "react";
 function Ears(){
 const [ears, setears] = useState(0);
 var earNames = [
+    'ears-0',
     'ears-1',
     'ears-2',
     'ears-3'
@@ -13,10 +14,10 @@ var earNames = [
     
 ]; 
   var earCollection = [
-    
-    { url: "http://localhost:3000/ear1.png", title: "beach" },
-    { url: "http://localhost:3000/ear2.png", title: "boat" },
-    { url: "http://localhost:3000/ear3.png", title: "forest" },
+    {url: "http://localhost:3000/none.png"},
+    { url: "http://localhost:3000/ear1.png"},
+    { url: "http://localhost:3000/ear2.png" },
+    { url: "http://localhost:3000/ear3.png"},
    
     
 ]; 
@@ -29,7 +30,7 @@ function Prev(){
     //else{
       //  Current--;}
       if(ears === 0){
-        setears(ears + 2)
+        setears(ears + 3)
       }
         else{
           setears(ears -1)
@@ -41,8 +42,8 @@ function Prev(){
 
 
 function Next(){
-  if(ears > 1 ){
-    setears(ears - 2)
+  if(ears > 2 ){
+    setears(ears - 3)
   }
     else{
       setears(ears + 1)

@@ -6,6 +6,7 @@ import { useState } from "react";
 function Hairs(){
 const [hairs, setHairs] = useState(0);
 var hairNames = [
+    'hair-0',
     'hair-1',
     'hair-2',
     'hair-3'
@@ -13,10 +14,10 @@ var hairNames = [
     
 ]; 
   var hairCollection = [
-    
-    { url: "http://localhost:3000/hair1.png", title: "beach" },
-    { url: "http://localhost:3000/hair2.png", title: "boat" },
-    { url: "http://localhost:3000/newhair1.png", title: "forest" },
+    {url: "http://localhost:3000/none.png"},
+    { url: "http://localhost:3000/hair1.png"},
+    { url: "http://localhost:3000/hair2.png" },
+    { url: "http://localhost:3000/newhair1.png"},
    
     
 ]; 
@@ -29,7 +30,7 @@ function Prev(){
     //else{
       //  Current--;}
       if(hairs === 0){
-        setHairs(hairs + 2)
+        setHairs(hairs + 3)
       }
         else{
           setHairs(hairs -1)
@@ -42,8 +43,8 @@ function Prev(){
 
 
 function Next(){
-  if(hairs > 1 ){
-    setHairs(hairs - 2)
+  if(hairs > 2 ){
+    setHairs(hairs - 3)
   }
     else{
       setHairs(hairs + 1)

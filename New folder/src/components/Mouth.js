@@ -6,6 +6,7 @@ import { useState } from "react";
 function Mouths(){
   const [mouth, setMouths] = useState(0);
 var mouthNames = [
+    'Lips-0',
     'Lips-1',
     'Lips-2',
     'Lips-3'
@@ -13,10 +14,10 @@ var mouthNames = [
     
 ]; 
   var mouthCollection = [
-
-    { url: "http://localhost:3000/mouth1.png", title: "beach" },
-    { url: "http://localhost:3000/mouth2.png", title: "boat" },
-    { url: "http://localhost:3000/mouth3.png", title: "forest" },
+    {url: "http://localhost:3000/none.png"},
+    { url: "http://localhost:3000/mouth1.png"},
+    { url: "http://localhost:3000/mouth2.png"},
+    { url: "http://localhost:3000/mouth3.png"},
    
     
 ]; 
@@ -29,7 +30,7 @@ function Prev(){
     //else{
       //  Current--;}
       if(mouth === 0){
-        setMouths(mouth + 2)
+        setMouths(mouth + 3)
       }
         else{
           setMouths(mouth -1)
@@ -39,8 +40,8 @@ function Prev(){
 
 
 function Next(){
-  if(mouth > 1 ){
-    setMouths(mouth - 2)
+  if(mouth > 2 ){
+    setMouths(mouth - 3)
   }
     else{
       setMouths(mouth + 1)

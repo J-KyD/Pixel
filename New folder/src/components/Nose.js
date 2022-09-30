@@ -6,6 +6,7 @@ import { useState } from "react";
 function Noses(){
 const [noses, setnoses] = useState(0);
 var noseNames = [
+    'nose-0',
     'nose-1',
     'nose-2',
     'nose-3'
@@ -13,10 +14,10 @@ var noseNames = [
     
 ]; 
   var noseCollection = [
-
-    { url: "http://localhost:3000/nose.png", title: "beach" },
-    { url: "http://localhost:3000/nose2.png", title: "boat" },
-    { url: "http://localhost:3000/nose3.png", title: "forest" },
+    {url: "http://localhost:3000/none.png"},
+    { url: "http://localhost:3000/nose.png"},
+    { url: "http://localhost:3000/nose2.png"},
+    { url: "http://localhost:3000/nose3.png"},
    
     
 ]; 
@@ -29,7 +30,7 @@ function Prev(){
     //else{
       //  Current--;}
       if(noses === 0){
-        setnoses(noses + 2)
+        setnoses(noses + 3)
       }
         else{
           setnoses(noses -1)
@@ -39,8 +40,8 @@ function Prev(){
 
 
 function Next(){
-  if(noses > 1 ){
-    setnoses(noses - 2)
+  if(noses > 2 ){
+    setnoses(noses - 3)
   }
     else{
       setnoses(noses + 1)
