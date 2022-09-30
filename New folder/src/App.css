@@ -17,10 +17,11 @@ body{
 #picon{
   margin: 0;
   border: none;
-  width: 300px;
+  width: 350px;
   height: 100%;
   padding: 0;
   background-color: transparent;
+  
 }
 
 .hello{
@@ -111,7 +112,7 @@ body{
   background-color: #404454;
   color: white;
   border-radius: 10px;
-  width: 100%;
+  width: 80%;
   height: 50px;
   margin-top: 20px;
   font-size: 25px;
@@ -123,8 +124,8 @@ button{
   background-color: #404454;
   color: white;
   border-radius: 10px;
-  margin-left: 30px;
- 
+  margin-left: 20px;
+
 }
 
 
@@ -149,20 +150,19 @@ button{
   .col-4{
     width: 280px;
     margin-left: 0px;
+    
   }
   
   
 }
-@media screen and (max-width:1105px) {
+@media screen and (max-width:1173px) {
   .col-8{
-    width: 100vh;
+    width: 90vh;
   }
   .col-4{
     width: 280px;
   }
-  #left{
-    margin-left: 30px;
-  }
+
   
 }
 
@@ -180,13 +180,7 @@ button{
   
 }
 
-@media screen and (max-width:1055px) {
- 
-  .print{
-    margin-left: 10px;
-  }
-  
-}
+
 @media screen and (max-width:1055px) {
   #left{
     margin-left: 10px;
@@ -197,13 +191,30 @@ button{
   .row{
     margin: 0;
   }
-
+  .print{
+    margin-left: 10px;
+  }
   
 }
 
-@media screen and (max-width:446px) {
+
+  
+
+@media screen and (max-width:1065px) {
   .col-8{
-    width:100vh;
+    width:80vh;
+  }
+  
+}
+@media screen and (max-width:972px) {
+  .col-8{
+    width:52vh;
+  }
+  
+}
+@media screen and (max-width:700px) {
+  .col-8{
+    width:150vh;
   }
   
 }
