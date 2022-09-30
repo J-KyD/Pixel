@@ -2,9 +2,9 @@ import React from "react";
 import Hairs from './Hair';
 import Ears from "./Ears";
 import Eyes from './Eyes'
-import pic from '../face.png';
 import Noses from "./Nose";
 import Mouths from "./Mouth";
+import Color from "./Color";
 
 function Container(){
 
@@ -16,15 +16,11 @@ function Container(){
 
             <div className="col-6" id="picon">
             
-             <div className='hello' >
-              
-  <img src ={pic} className ="img" alt="main" id="my-section"></img>  
-  </div>
-  <button onClick={window.print} className ="print"> Print</button>
+  <Color />
  
   
  </div>
-          <div className="col-6">
+          <div className="col-8">
             <div className="row">
           <div className="col-4" >
             <div className="col-12" id="top">
